@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mydefault"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/big_icon"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/big_icon"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dayList"
+        android:layout_above="@id/big_icon"
+        android:divider="@null"
+        android:background="#00000000"/>
+
+    <Button
+        android:id="@+id/monthBtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="November"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/big_icon"
+        android:layout_toRightOf="@id/big_icon"
+        android:layout_alignTop="@id/big_icon"
+        android:stateListAnimator="@null"
+        android:background="#00000000" />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:id="@+id/icon01"
+        android:layout_toEndOf="@id/monthBtn"
+        android:layout_toRightOf="@id/monthBtn"
+        android:layout_alignTop="@id/monthBtn"
+        android:src="@drawable/small_icon"/>
+    <Button
+        android:id="@+id/yearBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="2018"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/icon01"
+        android:layout_toRightOf="@id/icon01"
+        android:layout_alignTop="@id/icon01"
+        android:stateListAnimator="@null"
+        android:background="#00000000"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:id="@+id/icon02"
+        android:layout_alignTop="@id/yearBtn"
+        android:layout_toEndOf="@id/yearBtn"
+        android:layout_toRightOf="@id/yearBtn"
+        android:src="@drawable/small_icon"/>
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/icon02"
+        android:layout_toEndOf="@id/icon02"
+        android:layout_toRightOf="@id/icon02"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/add_icon"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:id="@+id/icon03"
+        android:layout_alignTop="@id/addBtn"
+        android:layout_toEndOf="@id/addBtn"
+        android:layout_toRightOf="@id/addBtn"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/small_icon"/>
+    <Button
+        android:id="@+id/viewBtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/icon03"
+        android:layout_toRightOf="@id/icon03"
+        android:layout_alignTop="@id/icon03"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/view_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/mLinear"
+        android:layout_below="@id/dayList"
+        android:visibility="gone"
+        android:background="@drawable/mydefault"
+        android:orientation="horizontal">
+
+        <com.example.getxiangmu1.HorizontalListView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/monthTab"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/yLinear"
+        android:layout_below="@id/dayList"
+        android:visibility="gone"
+        android:background="@drawable/mydefault"
+        android:orientation="horizontal">
+
+        <com.example.getxiangmu1.HorizontalListView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/yearTab"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewLinear"
+        android:orientation="vertical"
+        android:background="@drawable/mydefault"
+        android:visibility="gone"
+        android:layout_above="@id/big_icon">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewText"
+            android:text="@string/hello_world"
+            android:textSize="18sp"
+            android:paddingLeft="18sp"
+            android:paddingRight="28sp"
+            android:paddingTop="18sp"
+            android:background="#00000000"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

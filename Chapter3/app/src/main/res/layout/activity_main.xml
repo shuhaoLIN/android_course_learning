@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textColor="#00ff00"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:text="button"
+            android:textAllCaps="false"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/edit_text"
+              android:hint="请在这里输入内容"
+              android:maxLines="5"/>
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/iamge_view"
+                android:src="@drawable/p_5"/>
+    <ProgressBar android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                android:id="@+id/progress_bar"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:max="100"
+                />
+    <ProgressBar android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 style="?android:attr/progressBarStyleInverse"
+    />
+    <ProgressBar android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 style="?android:attr/progressBarStyleLarge"
+    />
+</LinearLayout>

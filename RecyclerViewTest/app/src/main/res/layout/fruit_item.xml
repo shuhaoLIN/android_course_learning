@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+              <!--android:layout_width="100dp"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:orientation="vertical"-->
+<!--&gt;-->
+    <!--<ImageView android:layout_width="100px" android:layout_height="100px"-->
+               <!--android:id="@+id/fruit_image"-->
+               <!--android:layout_gravity="center_horizontal"-->
+               <!--android:layout_marginTop="10dp"-->
+    <!--/>-->
+    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+              <!--android:id="@+id/fruit_name"-->
+              <!--android:layout_marginTop="10dp"-->
+              <!--android:layout_gravity="center_horizontal"-->
+    <!--/>-->
+    <!--&lt;!&ndash;<Button android:layout_width="wrap_content" android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/fruit_buy"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="购买"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+<!--</LinearLayout>-->
+<!--瀑布流写法-->
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:id="@+id/fruit_image"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="10dp"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/fruit_name"
+              android:layout_gravity="left"
+              android:layout_marginTop="10dp"
+    />
+
+</LinearLayout>

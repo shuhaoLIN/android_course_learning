@@ -1,0 +1,3 @@
+10月12日软件和9月30日的区别。
+增加了Goods.java类和GoodsCollectionOperater.java
+GoodsPriceActivity里面增加数据分离的代码和数据保存、读取的代码。

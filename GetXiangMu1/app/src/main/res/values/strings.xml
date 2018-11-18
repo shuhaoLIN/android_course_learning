@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DayGram</string>
+    <string name="hello_world">
+        START:
+        \n 0   Hello World
+        \n 1   Hello World
+        \n 2   Hello World
+        \n 3   Hello World
+        \n 4   Hello World
+        \n 5   Hello World
+        \n 6   Hello World
+        \n 7   Hello World
+        \n 8   Hello World
+        \n 9   Hello World
+        \n10   Hello World
+        \n11   Hello World
+        \n12   Hello World
+        \n13   Hello World
+        \n14   Hello World
+        \n15   Hello World
+        \n16   Hello World
+    </string>
+</resources>

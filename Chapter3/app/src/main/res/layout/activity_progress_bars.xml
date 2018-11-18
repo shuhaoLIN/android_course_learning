@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:weightSum="1">
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+    <!--/>-->
+
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--android:id="@+id/progress_bar"-->
+                 <!--style="?android:attr/progressBarStyleHorizontal"-->
+                 <!--android:max="100"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="?android:attr/progressBarStyleInverse"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="?android:attr/progressBarStyleLarge"-->
+
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="?android:attr/progressBarStyleLargeInverse"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="?android:attr/progressBarStyleSmall"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="?android:attr/progressBarStyleSmallTitle"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="@android:style/Widget.ProgressBar"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+                 <!--android:progress="20"-->
+                 <!--android:secondaryProgress="40"-->
+    <!--/>-->
+    <!--<TextView android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:text="自定义进度条"-->
+              <!--android:textSize="10pt"-->
+    <!--/>-->
+    <!--<ProgressBar android:layout_width="match_parent"-->
+                 <!--android:layout_height="wrap_content"-->
+                 <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+                 <!--android:progressDrawable="@drawable/test"-->
+                 <!--android:progress="20"-->
+                 <!--android:secondaryProgress="40"-->
+    <!--/>-->
+    <ProgressBar android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 style="@android:style/Widget.ProgressBar.Horizontal"
+                 android:progressDrawable="@drawable/test11"
+                 android:id="@+id/progress_bar2"
+                 android:progress="20"
+    />
+
+</LinearLayout>

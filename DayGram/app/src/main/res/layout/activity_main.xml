@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F1ED"
+        tools:context="com.example.daygram.MainActivity"
+        >
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dataListView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:divider="@null"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F2F1ED"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/monthChioceBtn"
+                android:text="AUGUST"
+                android:background="#F2F1ED"
+                android:drawableLeft="@drawable/buttom_button_left"
+                android:drawableRight="@drawable/buttom_button_center"
+        />
+        <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/yearChioceBtn"
+                    android:text="2015"
+                    android:background="#F2F1ED"
+                    android:drawableRight="@drawable/buttom_button_center"
+            />
+        <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/addBtnButtom"
+                    android:background="#F2F1ED"
+                    android:text="+"
+                    android:textSize="30dp"
+                    android:drawableRight="@drawable/buttom_button_center"
+        />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/showMonthBtn"
+                android:src="@drawable/buttom_long_button"
+        />
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/buy_edit"
+              android:maxLines="1"
+              android:hint="请写下购买数量"
+              android:textColorHint="#00ff00"
+              android:textColor="#00ff00"
+              android:inputType="number|numberDecimal"
+              android:maxLength="10"
+    />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/buy_it"
+            android:text="确认购买"
+    />
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/buy_cancel"
+            android:text="取消购买"
+    />
+
+</LinearLayout>

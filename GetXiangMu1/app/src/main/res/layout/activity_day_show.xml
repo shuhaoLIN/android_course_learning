@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/DayShowMainView"
+    android:background="@drawable/default_day">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/monthTitle"
+        android:text="SEPTEMBER"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:id="@+id/btLeft"
+        android:src="@drawable/between_icon"
+        android:layout_alignTop="@id/monthTitle"
+        android:layout_toLeftOf="@id/monthTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/weekTitle"
+        android:text="WEDNESDAY"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/btLeft"
+        android:layout_alignTop="@id/btLeft"
+        android:background="#00000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/dayTitle"
+        android:text="29"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_alignTop="@id/monthTitle"
+        android:layout_toRightOf="@id/monthTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#00000000" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="50dp"
+        android:id="@+id/btRifht"
+        android:src="@drawable/between_icon"
+        android:layout_alignTop="@id/dayTitle"
+        android:layout_toRightOf="@id/dayTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/yearTitle"
+        android:text="2018"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_alignTop="@id/btRifht"
+        android:layout_toRightOf="@id/btRifht"
+        android:background="#00000000"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:id="@+id/titleIcon"
+        android:layout_below="@id/weekTitle"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/title_icon"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dayEdit"
+        android:layout_below="@id/titleIcon"
+        android:layout_above="@+id/clockBtn"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="20sp"
+        android:gravity="top"
+        android:text="THIS IS A EXAMPLE"
+        android:textSize="17sp"
+        android:cursorVisible="false"
+        android:background="#00000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/clockBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/clock"
+            android:stateListAnimator="@null"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/doneBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/done"
+            android:stateListAnimator="@null"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:id="@+id/back_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_centerHorizontal="true"
+            android:stateListAnimator="@null"
+            android:background="@drawable/back_btn"/>
+
+</RelativeLayout>

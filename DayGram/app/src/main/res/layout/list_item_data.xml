@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="5pt"
+               android:id="@+id/itemTop"
+               android:src="#00000000"
+    />
+    <TextView
+            android:layout_width="100px"
+            android:layout_height="60px"
+            android:id="@+id/weekText"
+            android:text="Stu"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/itemTop"
+            android:background="@drawable/week_text"
+    />
+    <TextView
+            android:layout_width="100px"
+            android:layout_height="60px"
+            android:id="@+id/dayText"
+            android:text="29"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/weekText"
+            android:background="@drawable/day_text"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:id="@+id/dataText"
+            android:text="测试\n测试"
+            android:gravity="center"
+            android:layout_below="@id/itemTop"
+            android:layout_toRightOf="@id/weekText"
+            android:background="@drawable/data_text"
+    />
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="5pt"
+               android:id="@+id/itemButtom"
+               android:layout_below="@id/dataText"
+               android:src="#00000000"
+    />
+
+</RelativeLayout>
