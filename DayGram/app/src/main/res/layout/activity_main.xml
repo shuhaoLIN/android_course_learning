@@ -17,10 +17,48 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="60dp"
             android:divider="@null"
     />
+
     <LinearLayout
+            android:id="@+id/month_item"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F2F1ED"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+    >
+       <com.example.horizontalListview.HorizontalListView
+               android:id="@+id/month_hlv"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/year_item"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F2F1ED"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+    >
+        <com.example.horizontalListview.HorizontalListView
+                android:id="@+id/year_hlv"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/all_menu"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="#F2F1ED"
@@ -29,40 +67,70 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             >
-
+        <ImageView
+                android:src="@drawable/buttom_button_left"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+        <!--<Spinner-->
+                <!--android:id="@+id/monthChioceSpinner"-->
+                <!--android:entries="@array/month_arr"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@null"-->
+                <!--android:drawableLeft="@drawable/buttom_button_left"-->
+                <!--android:drawableRight="@drawable/buttom_button_center"-->
+        <!--/>-->
         <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/monthChioceBtn"
-                android:text="AUGUST"
+                android:id="@+id/get_month_item"
+                android:text="JANUARY"
+                android:textSize="15dp"
                 android:background="#F2F1ED"
-                android:drawableLeft="@drawable/buttom_button_left"
-                android:drawableRight="@drawable/buttom_button_center"
-        />
+                android:layout_width="100dp"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:id="@+id/monthRight"
+                android:src="@drawable/buttom_button_center"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+        <!--<Spinner-->
+                <!--android:id="@+id/yearChioceSpinner"-->
+                <!--android:entries="@array/year_arr"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@null"-->
+                <!--android:drawableLeft="@drawable/buttom_button_left"-->
+                <!--android:drawableRight="@drawable/buttom_button_center"-->
+        <!--/>-->
         <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/yearChioceBtn"
-                    android:text="2015"
-                    android:background="#F2F1ED"
-                    android:drawableRight="@drawable/buttom_button_center"
-            />
+                android:id="@+id/get_year_item"
+                android:text="2018"
+                android:textSize="15dp"
+                android:background="#F2F1ED"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:src="@drawable/buttom_button_center"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
         <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:id="@+id/addBtnButtom"
                     android:background="#F2F1ED"
                     android:text="+"
                     android:textSize="30dp"
-                    android:drawableRight="@drawable/buttom_button_center"
         />
+        <ImageView
+                android:src="@drawable/buttom_button_center"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/showMonthBtn"
                 android:src="@drawable/buttom_long_button"
         />
-        </LinearLayout>
 
+        </LinearLayout>
 
 </RelativeLayout>
